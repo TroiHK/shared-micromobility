@@ -17,7 +17,6 @@
   },
   "minimum-stability": "dev",
   "require": {
-    "wpackagist-plugin/advanced-custom-fields": "^5.8.1",
     "wpackagist-plugin/classic-editor": "^1.5"
   }
 }
