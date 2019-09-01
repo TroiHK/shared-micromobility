@@ -80,15 +80,13 @@
 	<div class="container-modal">
 		<div class="content-modal">
 			<span class="icon-close icon-close-credits">
-	        </span>	
-			<div class="">
-				<p>Identité visuelle</p>
-				<h3><a href="http://www.georgesk.fr/" alt="portoflio to Georges Khayat">Georges Khayat</a></h3>
+	        </span>
+            <?php while ( have_rows('footer__credits_items', 'option') ) : the_row(); ?>
+			<div class="credits-item">
+				<p><?= get_sub_field('title') ?></p>
+				<h3><a href="<?= get_sub_field('link')['url'] ?>" alt="portoflio to <?= get_sub_field('link')['title'] ?>"><?= get_sub_field('link')['title'] ?></a></h3>
 			</div>
-			<div class="">
-				<p>UX/UI et développement</p>
-				<h3 class="no-height"><a href="http://jeremylorent.fr/" alt="portoflio to Jérémy Lorent">Jérémy Lorent</a></h3>
-			</div>
+            <?php endwhile; ?>
 		</div>
 		<div class="modal-background">
 		</div>
