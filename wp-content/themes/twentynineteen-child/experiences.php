@@ -45,7 +45,7 @@ get_header(); ?>
                     </a>
                 <?php endwhile; ?>
                 <?php wp_reset_query(); ?>
-                <a href="<?php home_url('consulting'); ?>" class="btn-view-all"><i class="fas fa-arrow-right"></i> <?= __('Back to the Consulting page', DOMAIN); ?></a>
+                <a href="<?= home_url('consulting'); ?>" class="btn-view-all"><i class="fas fa-arrow-right"></i> <?= __('Back to the Consulting page', DOMAIN); ?></a>
             </div>
             <?php endif; ?>
         </article>
