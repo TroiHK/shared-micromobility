@@ -187,9 +187,9 @@
                 "id": ""
             },
             "post_type": [
-                "experiences"
+                "references"
             ],
-            "taxonomy": [],
+            "taxonomy": "",
             "filters": [
                 "search"
             ],
@@ -564,5 +564,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1567321064
+    "modified": 1567512528
 }
